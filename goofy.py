@@ -17,5 +17,3 @@ def Quote():
 def ip():
     result = _SimpleGET("/ip")
     return result["ip"]
-
-print (Quote())
