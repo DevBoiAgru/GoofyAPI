@@ -5,7 +5,7 @@ URL = "https://sussyworkshop.pythonanywhere.com/"
 
 def _SimpleGET(endpoint):
     url = URL + endpoint
-    response = requests.request("GET", url)
+    response = requests.request("GET", url, headers={"method":"command"})
     return json.loads(response.text)
 
 # Get quote from bbc
@@ -17,3 +17,5 @@ def Quote():
 def ip():
     result = _SimpleGET("/ip")
     return result["ip"]
+
+print (Quote())
