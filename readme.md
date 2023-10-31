@@ -15,4 +15,8 @@ You can make http calls yourself [here](https://sussyworkshop.pythonanywhere.com
 - Import the whole module using ```import goofy``` or import functions separately using ```from goofy import <function name>```
 - Use as usual!
 
+
+# Requirements:
+- requests module
+
 ## More features coming soon!
