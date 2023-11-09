@@ -3,10 +3,14 @@ import json
 
 URL = "https://sussyworkshop.pythonanywhere.com/"
 
-def _SimpleGET(endpoint):
+def _SimpleGET(endpoint) ->dict:
     url = URL + endpoint
     response = requests.request("GET", url, headers={"method":"command"})
-    return json.loads(response.text)
+    responseDict = json.loads(response.text)
+    if responseDict["error"] != "none":
+        raise Exception(responseDict["error"])
+    else:
+        return responseDict
 
 # Get quote from bbc
 def Quote():
@@ -17,3 +21,8 @@ def Quote():
 def ip():
     result = _SimpleGET("/ip")
     return result["ip"]
+
+# Get a random password
+def password(characters: int = 12):
+    result = _SimpleGET(f"/password?length={int(characters)}")
+    return result["password"]
