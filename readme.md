@@ -32,8 +32,8 @@ Add a "code" header with whatever content you want so that it doesnt return you 
 
 ## Quote
 
-Method:   <code>GET     </code>      <br>
-Endpoint: <code>/quote  </code>      <br>
+Method:   <code>GET</code>      <br>
+Endpoint: <code>/quote</code>      <br>
 Sample response: <br>
 >{<br>
     "author": "themuye", <br>
@@ -44,8 +44,8 @@ Sample response: <br>
 
 ## IP
 
-Method:   <code>GET     </code>      <br>
-Endpoint: <code>/ip     </code>      <br>
+Method:   <code>GET</code>      <br>
+Endpoint: <code>/ip</code>      <br>
 Sample response: <br>
 >{<br>
 	"error": "None",<br>
@@ -55,8 +55,8 @@ Sample response: <br>
 
 ## Password
 
-Method:   <code>GET           </code>       <br>
-Endpoint: <code>/password     </code>       <br>
+Method:   <code>GET</code>       <br>
+Endpoint: <code>/password</code>       <br>
 Supported query string: <code>length</code> <br>
 Sample response: <br>
 >{<br>
