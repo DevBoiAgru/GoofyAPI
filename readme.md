@@ -17,7 +17,57 @@ You can make http calls yourself [here](https://sussyworkshop.pythonanywhere.com
 - Use as usual!
 
 
-# Requirements:
+## Requirements:
 - requests module
 
-## More features coming soon!
+<hr>
+
+# HTTP Calls
+
+If you are not using python, or just don't want to put a goofy.py in your directory, you can use the following endpoints to fetch data. <br>
+
+Base url: <code>https://sussyworkshop.pythonanywhere.com</code>
+
+Add a "code" header with whatever content you want so that it doesnt return you the HTML page!
+
+## Quote
+
+Method:   <code>GET     </code>      <br>
+Endpoint: <code>/quote  </code>      <br>
+Sample response: <br>
+>{<br>
+    "author": "themuye", <br>
+	"error": "None", <br>
+	"quote": "If ya wanna become monke press f "<br>
+}
+
+
+## IP
+
+Method:   <code>GET     </code>      <br>
+Endpoint: <code>/ip     </code>      <br>
+Sample response: <br>
+>{<br>
+	"error": "None",<br>
+	"ip": "69.69.69.69"<br>
+}
+
+
+## Password
+
+Method:   <code>GET           </code>       <br>
+Endpoint: <code>/password     </code>       <br>
+Supported query string: <code>length</code> <br>
+Sample response: <br>
+>{<br>
+	"error": "None",<br>
+	"password": "`1072d+'GIH6"<br>
+}<br>
+
+
+
+
+
+
+
+## More coming soon!

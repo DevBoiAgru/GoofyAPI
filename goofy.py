@@ -1,12 +1,10 @@
 import requests
-import json
 
 URL = "https://sussyworkshop.pythonanywhere.com/"
 
 def _SimpleGET(endpoint) ->dict:
     url = URL + endpoint
-    response = requests.request("GET", url, headers={"method":"command"})
-    responseDict = json.loads(response.text)
+    responseDict = requests.request("GET", url, headers={"method":"code"}).json()
     if responseDict["error"] != "none":
         raise Exception(responseDict["error"])
     else:
