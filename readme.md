@@ -9,6 +9,7 @@ You can make http calls yourself [here](https://sussyworkshop.pythonanywhere.com
 2. ```Quote()```: Returns a random quote from the baby blue club in the following format: [author, quote] (returns a python list)
 3. ```password(length)```: Returns a random password of specified length (returns a string)
 
+![image](screenshots/ip.png)
 
 ## How to use:
 - Download goofy.py
